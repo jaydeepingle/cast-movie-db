@@ -18,10 +18,10 @@ Previous Approach:
 I was trying to have a queue and execute mechanism in cyclic manner, after every 10 seconds, 
 10 requests will get dispatched and executed but because of some issues it was resulting in an unexpected
 behaviour, that's why later chose the simple approach.
-----------------------------------------------------------------------------------------
+
 Steps to run:
 
-npm install axios [if not installed]
+npm install axios [if not installed] <br />
 node index.js
 
 ----------------------------------------------------------------------------------------
