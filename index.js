@@ -3,13 +3,13 @@ var movieQueue = [];
 var tvQueue = [];
 
 var apiKey = '606aaffd7ca10f0b80804a1f0674e4e1';
-var discover = 'https://api.themoviedb.org/3/discover';
+var discover = 'https://api.themoviedb.org:443/3/discover';
 
-var tv = 'https://api.themoviedb.org/3/tv';
+var tv = 'https://api.themoviedb.org:443/3/tv';
 var startTV = 'air_date.gte=2017-12-01';
 var endTV = 'air_date.lte=2017-12-31';
 
-var movie = 'https://api.themoviedb.org/3/movie';
+var movie = 'https://api.themoviedb.org:443/3/movie';
 var startMovie = 'primary_release_date.gte=2017-12-01';
 var endMovie = 'primary_release_date.lte=2017-12-31';
 
@@ -45,9 +45,9 @@ axios
         requests = tvRequests + movieRequests;
     }))
     .then(response => {
-        console.log("Results: ", movieResults, " ", tvResults);
-        console.log("Pages: ", moviePages, " ", tvPages);
-        console.log('Total Requests: ', requests, " ", movieRequests, " ", tvRequests);
+        //console.log("Results: ", movieResults, " ", tvResults);
+        //console.log("Pages: ", moviePages, " ", tvPages);
+        console.log('Total Requests: ', " ", movieRequests, "+", tvRequests, " ", requests);
         initiate();
     })
     .catch(error => {
