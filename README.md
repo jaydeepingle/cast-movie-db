@@ -19,7 +19,7 @@ I was trying to have a queue and execute mechanism in cyclic manner, after every
 10 requests will get dispatched and executed but because of some issues it was resulting in an unexpected
 behaviour, that's why later chose the simple approach.
 
-Steps to run:
+Steps to run: <br />
 ```git clone https://github.com/jaydeepingle/cast-movie-db.git``` <br />
 ```cd cast-movie-db``` <br />
 ```npm install axios``` [if not installed] <br />
