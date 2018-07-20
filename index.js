@@ -45,9 +45,8 @@ axios
         requests = tvRequests + movieRequests;
     }))
     .then(response => {
-        //console.log("Results: ", movieResults, " ", tvResults);
-        //console.log("Pages: ", moviePages, " ", tvPages);
-        console.log('Total Requests: ', " ", movieRequests, "+", tvRequests, " ", requests);
+        console.log('Total Requests: ', " ", movieRequests, "+", tvRequests, "=", requests);
+        console.log("Total Page Count: ", (moviePages + tvPages));
         initiate();
     })
     .catch(error => {
