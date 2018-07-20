@@ -88,7 +88,7 @@ var initiate = function() {
 
 // Start by fetching movie casts
 var startFunction = function() {
-    refreshIntervalId = setInterval(getMovieCasts, 7000);
+    refreshIntervalId = setInterval(getMovieCasts, 10000);
 }
 
 var getMovieCasts = function() {
@@ -118,7 +118,7 @@ var getMovieCasts = function() {
 
 // Jump to start fetching tv casts.
 var jumpToTVCasts = function() {
-    refreshIntervalId = setInterval(getTVCasts, 7000);
+    refreshIntervalId = setInterval(getTVCasts, 10000);
 }
 
 var getTVCasts = function() {
