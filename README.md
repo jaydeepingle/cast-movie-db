@@ -20,8 +20,9 @@ I was trying to have a queue and execute mechanism in cyclic manner, after every
 behaviour, that's why later chose the simple approach.
 
 Steps to run:
-
-npm install axios [if not installed] <br />
-node index.js
+```git clone https://github.com/jaydeepingle/cast-movie-db.git``` <br />
+```cd cast-movie-db``` <br />
+```npm install axios``` [if not installed] <br />
+```node index.js```
 
 ----------------------------------------------------------------------------------------
